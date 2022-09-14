@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint1"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginStart="13dp"/>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_baseline_shopping_bag_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginEnd="22dp"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <ImageView
+        android:id="@+id/shoe"
+        android:layout_width="match_parent"
+        android:layout_height="275dp"
+        android:contentDescription="TODO"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image_shoe1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/constraint1" />
+
+    <ImageView
+        android:id="@+id/favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_baseline_favorite_border_24"
+        app:layout_constraintTop_toTopOf="@id/five"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintEnd_toStartOf="@id/five"
+        app:layout_constraintBottom_toBottomOf="@id/five"/>
+
+    <ImageView
+        android:id="@+id/share"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_baseline_share_24"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintTop_toBottomOf="@id/shoe"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/five"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5"
+        android:textSize="17dp"
+        android:textColor="@color/cinnamon"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintEnd_toStartOf="@id/share"
+        app:layout_constraintTop_toTopOf="@id/share"
+        app:layout_constraintBottom_toBottomOf="@id/share"/>
+
+    <TextView
+        android:id="@+id/peterDo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PETER DO"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="25dp"
+        app:layout_constraintTop_toBottomOf="@id/favorite"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TOP"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/peterDo"
+        app:layout_constraintStart_toStartOf="@id/peterDo"/>
+
+    <TextView
+        android:id="@+id/weLove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="we Love"
+        android:textSize="10dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/top"
+        app:layout_constraintStart_toStartOf="@id/top"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint2"
+        android:layout_width="match_parent"
+        android:layout_height="235dp"
+        android:background="@color/whiteSmoke"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22dp"
+        android:text="325,10"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="@id/constraint2"
+        app:layout_constraintStart_toStartOf="@id/weLove"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_euro_24"
+        app:layout_constraintTop_toTopOf="@id/amount"
+        app:layout_constraintStart_toEndOf="@id/amount"
+        app:layout_constraintBottom_toBottomOf="@id/amount" />
+
+    <TextView
+        android:id="@+id/control"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:text="+15"
+        android:layout_marginTop="3dp"
+        app:layout_constraintTop_toBottomOf="@id/amount"
+        app:layout_constraintStart_toStartOf="@id/weLove"/>
+
+    <ImageView
+        android:id="@+id/euro2"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:src="@drawable/ic_baseline_euro_24"
+        app:layout_constraintTop_toTopOf="@id/control"
+        app:layout_constraintStart_toEndOf="@id/control"
+        app:layout_constraintBottom_toBottomOf="@id/control"
+        android:layout_marginStart="2dp"/>
+
+    <TextView
+        android:id="@+id/authentication"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:text="Control and authentication"
+        android:layout_marginTop="3dp"
+        app:layout_constraintTop_toTopOf="@id/euro2"
+        app:layout_constraintBottom_toBottomOf="@id/euro2"
+        app:layout_constraintStart_toEndOf="@id/euro2"
+        android:layout_marginStart="2dp"/>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/hexagon"
+        android:layout_width="35dp"
+        android:layout_height="37dp"
+        android:src="@drawable/ic_baseline_hexagon_24"
+        app:strokeWidth="2dp"
+        app:strokeColor="@color/cinnamon"
+        app:layout_constraintTop_toBottomOf="@id/control"
+        app:layout_constraintStart_toStartOf="@id/control"
+        android:layout_marginTop="15dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_diamond_24"
+        app:layout_constraintEnd_toEndOf="@id/hexagon"
+        app:layout_constraintStart_toStartOf="@id/hexagon"
+        app:layout_constraintTop_toTopOf="@id/hexagon"
+        app:layout_constraintBottom_toBottomOf="@id/hexagon" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_baseline_check_circle_24"
+        app:layout_constraintTop_toTopOf="@id/hexagon"
+        app:layout_constraintStart_toStartOf="@id/control"
+        android:layout_marginStart="26dp" />
+
+    <TextView
+        android:id="@+id/pca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Physical control and authentication by our "
+        android:textColor="@color/cinnamon"
+        app:layout_constraintTop_toTopOf="@id/hexagon"
+        app:layout_constraintStart_toEndOf="@id/hexagon"
+        android:layout_marginStart="25dp"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/experts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="experts."
+        android:scrollbarSize="14dp"
+        app:layout_constraintStart_toStartOf="@id/pca"
+        app:layout_constraintBottom_toBottomOf="@id/hexagon"
+        android:textColor="@color/cinnamon" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  Learn more"
+        android:textColor="@color/cinnamon"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/hexagon"
+        app:layout_constraintStart_toEndOf="@id/experts"
+        app:layout_constraintTop_toBottomOf="@id/pca" />
+
+    <TextView
+        android:id="@+id/sinternational"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="S International"
+        app:layout_constraintTop_toBottomOf="@id/hexagon"
+        app:layout_constraintStart_toStartOf="@id/hexagon"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:textColor="@color/black"/>
+
+    <ImageView
+        android:id="@+id/errorOutline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_error_outline_24"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintTop_toTopOf="@id/sinternational"
+        app:layout_constraintBottom_toBottomOf="@id/sinternational"
+        app:layout_constraintStart_toEndOf="@id/sinternational"/>
+
+    <TextView
+        android:id="@+id/neverworn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Never worn, with tag"
+        android:textSize="20dp"
+        android:layout_marginTop="3dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/sinternational"
+        app:layout_constraintStart_toStartOf="@id/sinternational"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Polyester"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="3dp"
+        app:layout_constraintStart_toStartOf="@id/neverworn"
+        app:layout_constraintTop_toBottomOf="@id/neverworn"/>
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
